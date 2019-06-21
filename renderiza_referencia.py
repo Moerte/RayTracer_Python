@@ -14,14 +14,14 @@ from ray_tracer import RayTracer
 from tranformacao import Transformacao
 # teste ao construtor
 
-#translacao = Transformacao()
-#translacao.translacao(Vetor3D(-2, -4, 0))
+translacao = Transformacao()
+translacao.translacao(Vetor3D(-2, -4, 0))
 #escalamento = Transformacao()
 #escalamento.escalamento(1, 2, 1)
 #shearing = Transformacao()
 #shearing.shearing( 2, 1.5, 0, 0, 0, 0)
-rotX = Transformacao()
-rotX.rotacao_x(-1)
+##rotX = Transformacao()
+##rotX.rotacao_x(-1)
 #rotY = Transformacao()
 #rotY.rotacao_y(-0.5)
 #rotZ = Transformacao()
@@ -107,18 +107,18 @@ box_direita_baixo = FaceTriangular(box_direita_baixo_v1,
 
 # transformações
 #Translação
-#m1 = translacao.transforma_face_triangular(m1)
-#m2 = translacao.transforma_face_triangular(m2)
-#m3 = translacao.transforma_face_triangular(m3)
+m1 = translacao.transforma_face_triangular(m1)
+m2 = translacao.transforma_face_triangular(m2)
+m3 = translacao.transforma_face_triangular(m3)
 #m1 = escalamento.transforma_face_triangular(m1)
 #m2 = escalamento.transforma_face_triangular(m2)
 #m3 = escalamento.transforma_face_triangular(m3)
 #m1 = shearing.transforma_face_triangular(m1)
 #m2 = shearing.transforma_face_triangular(m2)
 #m3 = shearing.transforma_face_triangular(m3)
-m1 = rotX.transforma_face_triangular(m1)
-m2 = rotX.transforma_face_triangular(m2)
-m3 = rotX.transforma_face_triangular(m3)
+#m1 = rotX.transforma_face_triangular(m1)
+#m2 = rotX.transforma_face_triangular(m2)
+#m3 = rotX.transforma_face_triangular(m3)
 #m1 = rotY.transforma_face_triangular(m1)
 #m2 = rotY.transforma_face_triangular(m2)
 #m3 = rotY.transforma_face_triangular(m3)
